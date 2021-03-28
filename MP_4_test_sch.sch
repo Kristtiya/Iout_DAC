@@ -131,8 +131,8 @@ N 1580 -610 1690 -610 {}
 N 1610 -560 1720 -560 {}
 N 1720 -580 1720 -560 {}
 C {madvlsi/nmos3.sym} 280 -610 0 0 {name=M1
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -146,8 +146,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 380 -510 1 0 {name=M2
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -161,8 +161,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 510 -610 0 0 {name=M3
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -176,8 +176,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 610 -510 1 0 {name=M4
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -192,8 +192,8 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 110 -610 0 0 {name=p1 lab=Vg}
 C {madvlsi/nmos3.sym} 720 -610 0 0 {name=M5
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -207,8 +207,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 820 -510 1 0 {name=M6
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -222,8 +222,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 950 -610 0 0 {name=M7
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -237,8 +237,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1050 -510 1 0 {name=M8
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -252,8 +252,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1170 -610 0 0 {name=M9
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -267,8 +267,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1270 -510 1 0 {name=M10
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -282,8 +282,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1400 -610 0 0 {name=M11
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -297,8 +297,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1500 -510 1 0 {name=M12
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -312,8 +312,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1610 -610 0 0 {name=M13
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -327,8 +327,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 130 -310 2 0 {name=M14
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -342,8 +342,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 280 -310 0 0 {name=M15
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -357,8 +357,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 130 -180 0 0 {name=M16
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -372,8 +372,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 280 -180 2 0 {name=M17
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -391,8 +391,8 @@ C {madvlsi/gnd.sym} 280 -130 0 0 {name=l2 lab=GND}
 C {devices/iopin.sym} 80 -210 2 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 120 -410 2 0 {name=p3 lab=Vb}
 C {madvlsi/nmos3.sym} 510 -310 0 0 {name=M18
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -406,8 +406,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 510 -180 2 0 {name=M19
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -422,8 +422,8 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 510 -130 0 0 {name=l3 lab=GND}
 C {madvlsi/nmos3.sym} 720 -310 0 0 {name=M20
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -437,8 +437,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 720 -180 2 0 {name=M21
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -453,8 +453,8 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 720 -130 0 0 {name=l4 lab=GND}
 C {madvlsi/nmos3.sym} 950 -310 0 0 {name=M22
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -468,8 +468,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 950 -180 2 0 {name=M23
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -484,8 +484,8 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 950 -130 0 0 {name=l5 lab=GND}
 C {madvlsi/nmos3.sym} 1170 -310 0 0 {name=M24
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -499,8 +499,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1170 -180 2 0 {name=M25
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -515,8 +515,8 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 1170 -130 0 0 {name=l6 lab=GND}
 C {madvlsi/nmos3.sym} 1400 -310 0 0 {name=M26
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -530,8 +530,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1400 -180 2 0 {name=M27
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -546,8 +546,8 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 1400 -130 0 0 {name=l7 lab=GND}
 C {madvlsi/nmos3.sym} 1610 -310 0 0 {name=M28
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -561,8 +561,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1610 -180 2 0 {name=M29
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -586,8 +586,8 @@ C {devices/ipin.sym} 320 -180 2 0 {name=p10 lab=V0}
 C {devices/iopin.sym} 280 -750 3 0 {name=p11 lab=VP}
 C {devices/opin.sym} 1610 -760 3 0 {name=p12 lab=Vout}
 C {madvlsi/nmos3.sym} 380 -410 1 0 {name=M30
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -601,8 +601,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 170 -610 0 0 {name=M31
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -616,8 +616,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 610 -410 1 0 {name=M32
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -631,8 +631,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 820 -410 1 0 {name=M33
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -646,8 +646,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1050 -410 1 0 {name=M35
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -661,8 +661,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1270 -410 1 0 {name=M36
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -676,8 +676,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1500 -410 1 0 {name=M37
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
@@ -691,8 +691,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 1720 -610 0 0 {name=M38
-L=0.15
-W=1
+L=4
+W=0.75
 body=GND
 nf=1
 mult=1
