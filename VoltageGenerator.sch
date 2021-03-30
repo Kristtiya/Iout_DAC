@@ -17,14 +17,14 @@ N 50 -280 50 -240 { lab=#net4}
 N 50 -240 220 -240 { lab=#net4}
 N 220 -250 220 -240 { lab=#net4}
 N 220 -240 220 -190 { lab=#net4}
-N -0 -330 -0 -310 { lab=Vb}
+N -0 -330 -0 -310 { lab=#net5}
 N 120 -330 120 -310 { lab=VP}
 N 220 -330 220 -310 { lab=VP}
-N 250 -160 310 -160 { lab=#net5}
-N 290 -210 290 -160 { lab=#net5}
-N 290 -210 340 -210 { lab=#net5}
-N 340 -210 340 -190 { lab=#net5}
-N 340 -250 340 -210 { lab=#net5}
+N 250 -160 310 -160 { lab=#net6}
+N 290 -210 290 -160 { lab=#net6}
+N 290 -210 340 -210 { lab=#net6}
+N 340 -210 340 -190 { lab=#net6}
+N 340 -250 340 -210 { lab=#net6}
 N 220 -240 280 -240 { lab=#net4}
 N 280 -240 290 -240 { lab=#net4}
 N 290 -280 290 -240 { lab=#net4}
@@ -41,18 +41,18 @@ N 480 -160 500 -160 { lab=Vg}
 N 560 -250 560 -190 { lab=Vbn}
 N 560 -210 590 -210 { lab=Vbn}
 N 590 -210 590 -160 { lab=Vbn}
-N 450 -130 450 -100 { lab=#net6}
-N 480 -110 480 -70 { lab=#net6}
-N 450 -110 480 -110 { lab=#net6}
+N 450 -130 450 -100 { lab=#net7}
+N 480 -110 480 -70 { lab=#net7}
+N 450 -110 480 -110 { lab=#net7}
 N 590 -160 640 -160 { lab=Vbn}
 N 500 -160 540 -160 { lab=Vg}
 N 540 -230 540 -160 { lab=Vg}
 N 540 -230 640 -230 { lab=Vg}
-N 560 -130 560 -120 { lab=#net7}
+N 560 -130 560 -120 { lab=#net8}
 N 520 -90 530 -90 { lab=VP}
 N 520 -330 520 -90 { lab=VP}
 N 120 -330 560 -330 { lab=VP}
-N 0 -370 -0 -330 { lab=Vb}
+N 0 -370 -0 -330 { lab=#net5}
 N 0 -30 560 -30 { lab=VN}
 N 0 -30 -0 40 { lab=VN}
 N -0 40 -0 70 { lab=VN}
@@ -65,6 +65,8 @@ N 560 -60 560 -30 { lab=VN}
 N 120 -250 160 -250 { lab=#net3}
 N 160 -280 160 -250 { lab=#net3}
 N 340 -130 340 -30 { lab=VN}
+N -0 -420 -0 -370 {}
+N -40 -420 -0 -420 {}
 C {madvlsi/pmos3.sym} 0 -280 0 1 {name=M1
 L=4
 W=.75
@@ -278,8 +280,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 0 -370 0 0 {name=p1 lab=Vb}
-C {devices/iopin.sym} 0 -420 0 1 {name=p2 lab=VP}
+C {devices/iopin.sym} -30 -420 0 1 {name=p2 lab=VP}
 C {devices/iopin.sym} 0 70 0 1 {name=p3 lab=VN}
 C {devices/opin.sym} 640 -230 0 0 {name=p4 lab=Vg}
 C {devices/opin.sym} 640 -160 0 0 {name=p5 lab=Vbn}
