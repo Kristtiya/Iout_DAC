@@ -24,11 +24,11 @@ N 930 -160 940 -160 { lab=#net1}
 N 970 -160 990 -160 { lab=#net1}
 N 990 -160 1000 -160 { lab=#net1}
 N 960 -160 970 -160 { lab=#net1}
-N 430 -170 440 -170 { lab=#net2}
-N 430 -140 440 -140 { lab=#net3}
-N 1010 -160 1050 -160 { lab=#net4}
-N 390 -140 430 -140 { lab=#net3}
-N 400 -170 430 -170 { lab=#net2}
+N 430 -170 440 -170 { lab=Vg}
+N 430 -140 440 -140 { lab=Vg}
+N 1010 -160 1050 -160 { lab=#net2}
+N 390 -140 430 -140 { lab=Vg}
+N 400 -170 430 -170 { lab=Vg}
 C {/home/madvlsi/Desktop/Iout_DAC/DAC.sym} -120 480 0 0 {name=X1}
 C {/home/madvlsi/Desktop/Iout_DAC/VoltageGenerator.sym} -370 510 0 0 {name=X2}
 C {madvlsi/gnd.sym} 260 0 0 0 {name=l1 lab=GND}
@@ -86,3 +86,5 @@ value=1.8}
 C {madvlsi/gnd.sym} 1050 -100 0 0 {name=l3 lab=GND}
 C {madvlsi/ammeter2.sym} 1010 -160 1 0 {name=Vmeas}
 C {madvlsi/ammeter2.sym} 390 -170 3 0 {name=Vmeas1}
+C {devices/lab_pin.sym} 430 -170 1 0 {name=l4 sig_type=std_logic lab=Vg}
+C {devices/lab_pin.sym} 410 -140 3 0 {name=l5 sig_type=std_logic lab=Vbn}
