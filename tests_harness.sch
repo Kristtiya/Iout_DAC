@@ -58,10 +58,8 @@ N 350 -260 350 -70 { lab=#net9}
 N 390 -260 390 -100 { lab=#net10}
 N 390 -100 410 -100 { lab=#net10}
 N 410 -100 410 -70 { lab=#net10}
-C {/home/madvlsi/Documents/Iout_DAC/DAC.sym} -280 260 0 0 {name=X1}
 C {madvlsi/vsource.sym} -20 -450 0 0 {name=Vdd
 value=1}
-C {/home/madvlsi/Documents/Iout_DAC/VoltageGenerator.sym} -500 290 0 0 {name=X2}
 C {madvlsi/gnd.sym} 270 -210 0 0 {name=l1 lab=GND}
 C {madvlsi/vdd.sym} 270 -510 0 0 {name=l2 lab=VDD}
 C {devices/lab_pin.sym} 800 -330 2 0 {name=l6 sig_type=std_logic lab=Vout}
@@ -69,20 +67,20 @@ C {madvlsi/vdd.sym} -20 -490 0 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} -20 -410 0 0 {name=l7 lab=GND}
 C {madvlsi/gnd.sym} 530 20 0 0 {name=l5 lab=GND}
 C {madvlsi/ammeter1.sym} 800 -380 0 0 {name=VI1}
-C {devices/code_shown.sym} 710 -700 0 0 {name=SPICE only_toplevel=false value=".control
+C {devices/code_shown.sym} 850 -560 0 0 {name=SPICE only_toplevel=false value=".control
 set wr_vecnames
 set wr_singlescale
 
 let mc_runs = 10
 let run = 1
 dowhile run <= mc_runs
-dc vdd 0 1.8 1.10
+dc vdd 0 1.8 .2
 wrdata ~/Documents/mctut/mp4\{$&run\}.txt v(Vout)
 reset
 let run = run + 1
 end 
 .endc"}
-C {madvlsi/tt_models.sym} 10 -660 0 0 {
+C {madvlsi/tt_models.sym} 860 -290 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
@@ -106,3 +104,5 @@ C {madvlsi/vsource.sym} 650 -40 0 0 {name=Vb6
 value=1}
 C {madvlsi/vsource.sym} 710 -40 0 0 {name=Vb7
 value=1}
+C {/home/madvlsi/Desktop/Iout_DAC/DAC.sym} -280 260 0 0 {name=X1}
+C {/home/madvlsi/Desktop/Iout_DAC/VoltageGenerator.sym} -500 290 0 0 {name=X2}
