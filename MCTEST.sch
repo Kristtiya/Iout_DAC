@@ -13,22 +13,23 @@ N 430 -200 440 -200 { lab=VDD}
 N 430 -280 430 -200 { lab=VDD}
 N 260 -280 430 -280 { lab=VDD}
 N 290 -280 290 -240 { lab=VDD}
-N 510 -40 510 -0 { lab=b0}
-N 550 -40 550 0 { lab=b1}
-N 590 -40 590 -0 { lab=b2}
-N 630 -40 630 0 { lab=b3}
-N 670 -40 670 0 { lab=b4}
-N 710 -40 710 0 { lab=b5}
-N 750 -40 750 0 { lab=b6}
 N 930 -160 940 -160 { lab=#net1}
 N 970 -160 990 -160 { lab=#net1}
 N 990 -160 1000 -160 { lab=#net1}
 N 960 -160 970 -160 { lab=#net1}
 N 430 -170 440 -170 { lab=Vg}
-N 430 -140 440 -140 { lab=Vg}
+N 430 -140 440 -140 { lab=Vbn}
 N 1010 -160 1050 -160 { lab=#net2}
-N 390 -140 430 -140 { lab=Vg}
 N 400 -170 430 -170 { lab=Vg}
+N 510 -30 510 0 { lab=b0}
+N 550 -40 550 0 { lab=b1}
+N 590 -40 590 -0 { lab=b2}
+N 630 -40 630 -0 { lab=b3}
+N 670 -40 670 0 { lab=b4}
+N 710 -40 710 0 { lab=b5}
+N 750 -40 750 -0 { lab=b6}
+N 400 -140 410 -140 { lab=Vbn}
+N 410 -140 430 -140 { lab=Vbn}
 C {/home/madvlsi/Desktop/Iout_DAC/DAC.sym} -120 480 0 0 {name=X1}
 C {/home/madvlsi/Desktop/Iout_DAC/VoltageGenerator.sym} -370 510 0 0 {name=X2}
 C {madvlsi/gnd.sym} 260 0 0 0 {name=l1 lab=GND}
@@ -68,14 +69,14 @@ C {devices/lab_pin.sym} 630 0 3 0 {name=l25 sig_type=std_logic lab=b3}
 C {devices/lab_pin.sym} 670 0 3 0 {name=l26 sig_type=std_logic lab=b4}
 C {devices/lab_pin.sym} 710 0 3 0 {name=l27 sig_type=std_logic lab=b5}
 C {devices/lab_pin.sym} 750 0 3 0 {name=l28 sig_type=std_logic lab=b6}
-C {madvlsi/tt_models.sym} 230 -500 0 0 {
+C {madvlsi/tt_models.sym} 280 -420 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 380 -480 0 0 {name=SPICE only_toplevel=false value=".dc Vb0 0 1.8 0.001
+C {devices/code_shown.sym} 430 -400 0 0 {name=SPICE only_toplevel=false value=".dc Vb0 0 1.8 0.01
 .save all"}
 C {madvlsi/vsource.sym} 260 110 0 0 {name=Vdd
 value=1.8}
@@ -88,3 +89,5 @@ C {madvlsi/ammeter2.sym} 1010 -160 1 0 {name=Vmeas}
 C {madvlsi/ammeter2.sym} 390 -170 3 0 {name=Vmeas1}
 C {devices/lab_pin.sym} 430 -170 1 0 {name=l4 sig_type=std_logic lab=Vg}
 C {devices/lab_pin.sym} 410 -140 3 0 {name=l5 sig_type=std_logic lab=Vbn}
+C {madvlsi/ammeter2.sym} 510 -30 2 0 {name=Vb0i}
+C {madvlsi/ammeter2.sym} 390 -140 3 0 {name=Vmeas2}
