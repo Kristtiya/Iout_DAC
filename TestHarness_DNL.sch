@@ -45,7 +45,7 @@ C {madvlsi/vdd.sym} -20 -490 0 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} -20 -410 0 0 {name=l7 lab=GND}
 C {madvlsi/gnd.sym} -320 -130 0 0 {name=l5 lab=GND}
 C {madvlsi/ammeter1.sym} 800 -380 0 0 {name=VI1}
-C {devices/code_shown.sym} 850 -560 0 0 {name=SPICE only_toplevel=false value=".tran 1n 100n
+C {devices/code_shown.sym} 850 -560 0 0 {name=SPICE only_toplevel=false value=".tran 1n 50n
 .save all"}
 C {madvlsi/tt_models.sym} 860 -290 0 0 {
 name=TT_MODELS
@@ -58,11 +58,11 @@ C {madvlsi/vsource.sym} 800 -290 0 0 {name=Vout
 value=1.8}
 C {madvlsi/gnd.sym} 800 -260 0 0 {name=l3 lab=GND}
 C {madvlsi/vsource.sym} -200 -190 0 0 {name=Vb0
-value="pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)"}
+value="pulse(0 1.8 10ns 1ns 1ns 4ns 10ns)"}
 C {madvlsi/vsource.sym} -200 -10 0 0 {name=Vb1
-value="pulse(0 1.8 1ns 1ns 1ns 8ns 20ns)"}
-C {madvlsi/vsource.sym} -200 160 0 0 {name=Vb3
-value=1}
+value="pulse(0 1.8 15ns 1ns 1ns 8ns 21ns)"}
+C {madvlsi/vsource.sym} -200 160 0 0 {name=Vb2
+value="pulse(0 1.8 25ns 1ns 1ns 16ns 34ns)"}
 C {madvlsi/vsource.sym} -320 -190 0 0 {name=Vb4
 value=1}
 C {madvlsi/vsource.sym} 140 50 0 0 {name=Vb5
