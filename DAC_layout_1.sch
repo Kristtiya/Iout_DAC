@@ -203,16 +203,39 @@ N 280 -830 280 -570 { lab=#net4}
 N 250 -570 280 -570 { lab=#net4}
 N 300 -710 300 -520 { lab=Vbn}
 N 250 -520 300 -520 { lab=Vbn}
-N 580 -600 580 -570 {}
-N 550 -600 580 -600 {}
-N 580 -600 610 -600 {}
-N 580 -620 580 -600 {}
-N 540 -710 540 -700 {}
-N 520 -700 540 -700 {}
-N 520 -700 520 -570 {}
-N 620 -710 620 -700 {}
-N 620 -700 640 -700 {}
-N 640 -700 640 -570 {}
+N 580 -600 580 -570 { lab=VN}
+N 550 -600 580 -600 { lab=VN}
+N 580 -600 610 -600 { lab=VN}
+N 580 -620 580 -600 { lab=VN}
+N 540 -710 540 -700 { lab=#net5}
+N 520 -700 540 -700 { lab=#net5}
+N 520 -700 520 -570 { lab=#net5}
+N 620 -710 620 -700 { lab=#net6}
+N 620 -700 640 -700 { lab=#net6}
+N 640 -700 640 -570 { lab=#net6}
+N 580 -550 580 -520 { lab=VN}
+N 550 -550 580 -550 { lab=VN}
+N 580 -550 610 -550 { lab=VN}
+N 580 -600 580 -550 { lab=VN}
+N 640 -520 670 -520 { lab=#net2}
+N 670 -640 670 -520 { lab=#net2}
+N 610 -640 670 -640 { lab=#net2}
+N 610 -830 610 -640 { lab=#net2}
+N 500 -520 520 -520 { lab=#net3}
+N 500 -640 500 -520 { lab=#net3}
+N 500 -640 540 -640 { lab=#net3}
+N 540 -640 550 -640 { lab=#net3}
+N 550 -830 550 -640 { lab=#net3}
+N 800 -900 1060 -900 { lab=#net6}
+N 800 -940 800 -900 { lab=#net6}
+N 1180 -940 1180 -900 { lab=#net7}
+N 940 -940 1180 -940 { lab=#net7}
+N 1090 -930 1120 -930 { lab=VN}
+N 1120 -930 1120 -900 { lab=VN}
+N 1120 -930 1150 -930 { lab=VN}
+N 1120 -900 1120 -870 { lab=VN}
+N 1010 -870 1120 -870 { lab=VN}
+N 110 -1030 110 -980 { lab=VN}
 C {devices/iopin.sym} 120 -1120 2 0 {name=p11 lab=VP}
 C {devices/ipin.sym} 120 -1070 0 0 {name=p1 lab=VG}
 C {devices/ipin.sym} 150 -840 0 0 {name=p3 lab=Vbn}
@@ -316,9 +339,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 270 -1040 1 0 {name=M9
-L=0.15
-W=1
-body=GND
+L=10
+W=5
+body=VN
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -331,9 +354,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 210 -1040 3 1 {name=M10
-L=0.15
-W=1
-body=GND
+L=10
+W=5
+body=VN
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -784,9 +807,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 140 -1030 1 0 {name=M13
-L=0.15
-W=1
-body=GND
+L=10
+W=5
+body=VN
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -813,7 +836,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 110 -980 2 0 {name=p2 lab=VN}
 C {devices/iopin.sym} 110 -1060 2 0 {name=p10 lab=VN}
 C {madvlsi/nmos3.sym} 550 -1200 1 0 {name=M15
 L=10
@@ -875,7 +897,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 890 -1040 3 1 {name=M44
+C {madvlsi/nmos3.sym} 890 -1040 1 0 {name=M44
 L=10
 W=5
 body=GND
@@ -995,3 +1017,65 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {madvlsi/nmos3.sym} 550 -520 1 0 {name=M52
+L=10
+W=5
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} 610 -520 3 1 {name=M53
+L=10
+W=5
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} 1090 -900 3 1 {name=M54
+L=0.15
+W=1
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} 1150 -900 1 0 {name=M55
+L=0.15
+W=1
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/iopin.sym} 420 -830 3 0 {name=p2 lab=VN}
+C {devices/iopin.sym} 740 -830 3 0 {name=p18 lab=VN}
