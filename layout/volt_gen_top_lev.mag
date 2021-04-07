@@ -1,0 +1,19 @@
+magic
+tech sky130A
+timestamp 1617763088
+<< locali >>
+rect 860 425 895 445
+rect 855 230 895 250
+<< metal1 >>
+rect -5 550 40 650
+rect 0 285 55 385
+use voltage_generator  voltage_generator_0 ~/Documents/Iout_DAC/layout
+timestamp 1617762838
+transform 1 0 -575 0 1 1060
+box 570 -1060 1470 -355
+<< labels >>
+rlabel metal1 0 330 0 330 7 VN
+rlabel metal1 -5 600 -5 600 7 VP
+rlabel locali 895 435 895 435 3 VG
+rlabel locali 895 240 895 240 3 VBN
+<< end >>

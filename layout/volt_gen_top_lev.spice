@@ -1,0 +1,32 @@
+* SPICE3 file created from /home/madvlsi/Documents/Iout_DAC/layout/volt_gen_top_lev.ext - technology: sky130A
+
+.subckt voltage_generator VG VBN VN VP
+X0 a_1410_n1610# a_1410_n1610# VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=4.5e+12p ps=2.7e+07u w=1e+06u l=150000u
+X1 VP a_1830_n1050# VG VP sky130_fd_pr__pfet_01v8 ad=1.5e+12p pd=9e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X2 VBN VBN VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 a_1410_n2110# a_1410_n2110# VN VN sky130_fd_pr__nfet_01v8 ad=2e+12p pd=1.2e+07u as=0p ps=0u w=1e+06u l=150000u
+X4 VN a_1410_n2110# a_1410_n2110# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 a_1410_n1610# a_1830_n1050# VP VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X6 VN a_2520_n1580# VP VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.5e+12p ps=9e+06u w=1e+06u l=150000u
+X7 VP a_1180_n1550# a_1180_n1550# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X8 a_1440_n1550# a_1180_n1550# VP VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X9 a_1410_n2110# a_1410_n2110# VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 VN a_1410_n2110# a_1410_n2110# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 VP VN VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X12 VN a_1410_n2110# a_1410_n2110# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X13 VBN a_1830_n1050# VP VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X14 VN a_1280_n1580# a_1180_n1550# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X15 VP a_1700_n1050# a_1410_n2110# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X16 a_1440_n1550# a_1410_n1610# VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X17 VN a_1410_n2110# a_1410_n2110# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X18 a_1410_n2110# a_1410_n2110# VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X19 VN VG VG VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X20 a_1410_n2110# a_1410_n2110# VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+
+* Top level circuit /home/madvlsi/Documents/Iout_DAC/layout/volt_gen_top_lev
+
+Xvoltage_generator_0 VG VBN VN VP voltage_generator
+.end
+
